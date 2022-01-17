@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Aula 2 - páginas, rotas e grid
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- apresentar página de css #container -->
+  <div id="container">
+    
+    <!-- componente button -->
+    <!-- utilize routerLink para implementar a navegação entre páginas -->
+    <ion-button color="primary" routerLink="/grid1">
+      <ion-icon slot="start" name="airplane-outline"></ion-icon>
+      Grid 1
+    </ion-button>
+
+    <ion-button color="success" routerLink="/grid2">
+      <ion-icon slot="end" name="bug-sharp"></ion-icon>
+      Grid 2
+    </ion-button>
+
+  </div>
+</ion-content>

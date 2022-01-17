@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> <!-- componente padrão utilizado para "voltar uma rota" -->
+    </ion-buttons>
+    <ion-title>grid1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- GRID -->
+<!-- composto por 12 colunas -->
+<!-- preenchidas conforme necessidade do desenvolvedor -->
+<!-- é possível alterar a quantidade de colunas padrão -->
+<!-- funcionam de maneira responsiva -->
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col style="border: 1px solid red">
+        <div>1 de 3</div>
+      </ion-col>
+      <ion-col style="border: 1px solid green">
+        <div>2 de 3</div>
+      </ion-col>
+      <ion-col style="border: 1px solid yellow">
+        <div>3 de 3</div>
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <!-- a soma do tamanho das colunas deve ser igual a 12 -->
+    <!-- se não for igual, sobrará espaço ou o app ficará com o layout quebrado -->
+    <ion-row>
+      <ion-col size="8" style="border: 1px solid red">
+        <div>1 de 3</div>
+      </ion-col>
+      <ion-col size="2" style="border: 1px solid green">
+        <div>2 de 3</div>
+      </ion-col>
+      <ion-col size="2" style="border: 1px solid yellow">
+        <div>3 de 3</div>
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <ion-row>
+      <ion-col style="border: 1px solid red">
+        <div> primeira coluna </div>
+      </ion-col>
+      
+      <!-- size="auto" - utilizado para ajustar o tamanho da coluna ao conteúdo -->
+      <!-- as outras colunas preenchem o resto da linha -->
+      <ion-col size="auto" style="border: 1px solid green">
+        <div> segunda coluna ajustada </div>
+      </ion-col>
+
+      <ion-col style="border: 1px solid yellow">
+        <div> terceira coluna </div>
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <!-- alinhamento vertical -->
+    <!-- ion-align-items-center [-start ou -end] -->
+
+    <!-- alinhamento horizontal (aplicado nas colunas) -->
+    <!-- ion-text-left [-center ou -right] -->
+    <ion-row class="ion-align-items-center">
+      <ion-col style="border: 1px solid red">
+        <ion-row>
+          <ion-col size="4" style="border: 1px solid red" class="ion-text-left">
+            <p> primeiro texto primeiro texto primeiro texto primeiro texto primeiro texto primeiro texto </p>
+          </ion-col>
+          
+          <ion-col size="4" style="border: 1px solid green" class="ion-text-center">
+            <p> segundo texto segundo texto segundo texto segundo texto segundo texto segundo texto </p>
+          </ion-col>
+    
+          <ion-col size="4" style="border: 1px solid yellow" class="ion-text-right">
+            <p> terceiro texto terceiro texto terceiro texto terceiro texto terceiro texto terceiro texto </p>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+
+      <ion-col style="border: 1px solid green" class="ion-text-center">
+        <div> segunda coluna </div>
+      </ion-col>
+
+      <ion-col style="border: 1px solid yellow" class="ion-text-center">
+        <div> terceira coluna </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
